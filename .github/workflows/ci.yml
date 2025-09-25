@@ -1,0 +1,44 @@
+name: .NET CI/CD
+
+# Trigger workflow on push or PR to main branch
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout your code
+      - uses: actions/checkout@v3
+
+      # Step 2: Setup .NET SDK
+      - name: Setup .NET SDK
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '9.0.x'
+
+      # Step 3: Restore dependencies
+      - name: Restore dependencies
+        run: dotnet restore
+
+      # Step 4: Build the project
+      - name: Build
+        run: dotnet build --no-restore --configuration Release
+
+      # Step 5: Run unit tests
+      - name: Run tests
+        run: dotnet test --no-build --verbosity normal
+
+      # Step 6 (optional): Publish artifacts for CI/CD
+      - name: Publish build artifacts
+        if: success()
+        uses: actions/upload-artifact@v3
+        with:
+          name: SampleApp-Build
+          path: |
+            SampleApp/bin/Release
+            SampleApp.Tests/bin/Release
