@@ -1,0 +1,42 @@
+# Build results
+bin/
+obj/
+
+# Rider/VSCode/Visual Studio
+.vs/
+.idea/
+.vscode/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# JetBrains Rider
+.idea/
+*.iml
+
+# Rider caches
+.idea/.idea.*
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+.idea/libraries
+
+# Temporary files
+*.tmp
+*.temp
