@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "td4RRwzuvu9zr1JQur+DacfYCXzRxwoRfw/f5YLPoVg=",
+  "Source": "SampleCICD_Example",
+  "BasePath": "_content/SampleCICD_Example",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

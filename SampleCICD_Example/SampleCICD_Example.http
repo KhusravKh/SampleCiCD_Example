@@ -1,0 +1,6 @@
+@SampleCICD_Example_HostAddress = http://localhost:5068
+
+GET {{SampleCICD_Example_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
