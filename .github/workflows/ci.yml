@@ -51,20 +51,21 @@ jobs:
           name: ${{ env.HEROKU_WEBAPP_PACKAGE_PATH }}
 
 deploy:
-    name: Deploy to Heroku
-    runs-on: ubuntu-latest
-    needs: [build-and-test]
+  name: Deploy to Heroku
+  runs-on: ubuntu-latest
+  needs: [build-and-test]
 
-    steps:
-      - name: Download Artifact
-          uses: actions/download-artifact@v4
-          with:
-            name: 'webapp'
-            path: ${{ env.HEROKU_WEBAPP_PACKAGE_PATH }}
-          
-        - name: Deploy to Heroku
-            uses: akhileshns/heroku-deploy@v3.12.12
-            with:
-              heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
-              heroku_app_name: "sample-ci-cd-example" # Replace with your app name
-              heroku_email: "Khusrav837@gmail.com" # Replace with your Heroku email
+  steps:
+    - name: Download Artifact
+      uses: actions/download-artifact@v4
+      with:
+        name: 'webapp'
+        path: ${{ env.HEROKU_WEBAPP_PACKAGE_PATH }}
+
+    - name: Deploy to Heroku
+      uses: akhileshns/heroku-deploy@v3.12.12
+      with:
+        heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
+        heroku_app_name: "sample-ci-cd-example" # Replace with your app name
+        heroku_email: "Khusrav837@gmail.com"   # Replace with your Heroku email
+
