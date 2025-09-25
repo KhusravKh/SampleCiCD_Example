@@ -13,11 +13,13 @@ jobs:
 
     steps:
       # Step 1: Checkout your code
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Fetches all history for all branches and tags
 
       # Step 2: Setup .NET SDK
       - name: Setup .NET SDK
-        uses: actions/setup-dotnet@v3
+        uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '8.0.x'
 
@@ -31,4 +33,4 @@ jobs:
 
       # Step 5: Run unit tests
       - name: Run tests
-        run: dotnet test --verbosity normal
+        run: dotnet test --no-build --verbosity normal
