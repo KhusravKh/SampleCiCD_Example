@@ -56,11 +56,11 @@ deploy:
     needs: [build-and-test]
 
     steps:
-        - name: Download Artifact
-            uses: actions/download-artifact@v4
-            with:
-              name: 'webapp'
-              path: ${{ env.HEROKU_WEBAPP_PACKAGE_PATH }}
+      - name: Download Artifact
+          uses: actions/download-artifact@v4
+          with:
+            name: 'webapp'
+            path: ${{ env.HEROKU_WEBAPP_PACKAGE_PATH }}
           
         - name: Deploy to Heroku
             uses: akhileshns/heroku-deploy@v3.12.12
