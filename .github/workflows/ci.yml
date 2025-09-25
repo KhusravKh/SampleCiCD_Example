@@ -32,13 +32,3 @@ jobs:
       # Step 5: Run unit tests
       - name: Run tests
         run: dotnet test --no-build --verbosity normal
-
-      # Step 6 (optional): Publish artifacts for CI/CD
-      - name: Publish build artifacts
-        if: success()
-        uses: actions/upload-artifact@v3
-        with:
-          name: SampleApp-Build
-          path: |
-            SampleApp/bin/Release
-            SampleApp.Tests/bin/Release
