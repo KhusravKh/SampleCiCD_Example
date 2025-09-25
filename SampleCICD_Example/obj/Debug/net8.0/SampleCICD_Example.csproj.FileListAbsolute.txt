@@ -31,3 +31,4 @@ C:\Projects\SampleCICD_Example\SampleCICD_Example\obj\Debug\net8.0\refint\Sample
 C:\Projects\SampleCICD_Example\SampleCICD_Example\obj\Debug\net8.0\SampleCICD_Example.pdb
 C:\Projects\SampleCICD_Example\SampleCICD_Example\obj\Debug\net8.0\SampleCICD_Example.genruntimeconfig.cache
 C:\Projects\SampleCICD_Example\SampleCICD_Example\obj\Debug\net8.0\ref\SampleCICD_Example.dll
+C:\Projects\SampleCICD_Example\SampleCICD_Example\obj\Debug\net8.0\SampleCICD_Example.sourcelink.json
