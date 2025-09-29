@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SampleCICD_Example")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a469b1cf734d36102fc85a334c039badb46bec40")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e3a2f3193714c3050e748259f58a6aab027dd55a")]
 [assembly: System.Reflection.AssemblyProductAttribute("SampleCICD_Example")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SampleCICD_Example")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
